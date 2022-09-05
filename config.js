@@ -1,6 +1,6 @@
 export default {
     mongodb: {
-        mongo: "mongodb+srv://matias:351426351@cluster0.6lyvpyc.mongodb.net/?retryWrites=true&w=majority",
+        mongo: "mongodb+srv://lbpecoraro:lucia3600@cluster0.pi3nb2l.mongodb.net/?retryWrites=true&w=majority",
         db: "ecommerce",
         collectionProducts: "productos",
         collectionCarrito: "carrito",

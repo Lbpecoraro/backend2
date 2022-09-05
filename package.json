@@ -11,7 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@faker-js/faker": "^7.4.0",
+        "@faker-js/faker": "^7.5.0",
         "artillery": "^2.0.0-22",
         "autocannon": "^7.9.0",
         "bcrypt": "^5.0.1",

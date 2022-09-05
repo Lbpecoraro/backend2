@@ -14,9 +14,9 @@ app.use(cookieParser())
 
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://matias:351426351@cluster0.6lyvpyc.mongodb.net/?retryWrites=true&w=majority'
+        mongoUrl: 'mongodb+srv://lbpecoraro:lucia3600@cluster0.pi3nb2l.mongodb.net/?retryWrites=true&w=majority'
     }),
-    secret: 'Matias',
+    secret: 'Lucia',
     resave: false,
     saveUninitialized: false,
     cookie: {

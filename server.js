@@ -62,7 +62,7 @@ app.use(session({
     store: MongoStore.create({
         mongoUrl: config.mongodb.mongo
     }),
-    secret: 'Matias',
+    secret: 'Lucia',
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -114,7 +114,7 @@ app.post('/signIn',passport.authenticate('registracion',{ failureRedirect: '/',f
 
     //Mando mail cuando se registre el usuario
     transport.sendMail({
-        from: 'Matias <aguileramati50@gmail.com>',
+        from: 'Lucia <lbpecoraro@gmail.com>',
         to: process.env.EMAIL,
         html: `<h1>Que buen mail</h1>
         <span>Mail del usuario: ${username}</span>
@@ -171,7 +171,7 @@ app.get('/formulario/:username',async (req,res) => {
             let mensaje = crearMensaje(cart.productos);
 
             transport.sendMail({
-                from: 'Matias <aguileramati50@gmail.com>',
+                from: 'Lucia <lbpecoraro@gmail.com>',
                 to: process.env.EMAIL,
                 html: mensaje,
                 subject: `Nuevo pedido de ${username}` + mensaje
@@ -240,6 +240,7 @@ app.get('/formulario/:username',async (req,res) => {
                 foto: faker.image.imageUrl()
             },
         ]
+        console.log(productos);
         socket.emit('products',productos)
 
         socket.on('new_user',async (user) => {
