@@ -22,6 +22,7 @@ import dotenv from 'dotenv';
 import twilio from 'twilio'
 const cliente = twilio(process.env.TWILIO_ACCOUNT,process.env.TWILIO_TOKEN);
 
+
 //PARA MANDAR MAILS
 const transport = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
