@@ -22,7 +22,7 @@
 .productsTable {
     width: 100%;
     height: 100%;
-    background: rgb(25, 61, 129);
+    background: #eb636b;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@
     height: 100%;
     width: 100%;
     border-radius: 0.5rem;
-    background: #16487a;
+    background: #eb636b;
     color: white;
     padding: 1rem;
     display: flex;
