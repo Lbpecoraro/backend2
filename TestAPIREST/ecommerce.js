@@ -2,6 +2,10 @@ class Ecommerce {
 
     static carrito = [];
 
+    getProds() {
+        return Ecommerce.carrito
+    }
+
     addProd(prod) {
         Ecommerce.carrito.push(prod);
         return Ecommerce.carrito
@@ -27,7 +31,7 @@ class Ecommerce {
     }
 
     deleteProd(id) {
-        Ecommerce.carrito = Ecommerce.carrito.filter(prod => prod.id != id)
+        Ecommerce.carrito = Ecommerce.carrito.filter(prod => prod.id != id.id)
         return Ecommerce.carrito
     }
 }
